@@ -38,15 +38,19 @@ footer {
 }
 
 /* Botão */
+
 /* nunca me senti tão organizada, socorro */
 
-button {
-    background-color: rgba(240, 200, 127, 0);
-    font-family: Londona;
-    border-radius: 6px;
-    border-width: 1px;
-    padding: 7px 10px;
-    float: right;
+a.botão {
+    color: red;
+    text-decoration: none;
+    font-family: Kena;
+}
+
+a.botão:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 150%;
 }
 
 /* textos */
