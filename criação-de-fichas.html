@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fichas.css">
+    <title>O Segredo em Neupolina</title>
+    <link rel="shortcut icon" href="imagens/icons8-estrela-cute-color-favicons/web/star16x16.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="top">O Segredo em Neupolina</h1>
+        <ul class="link">
+            <a class="botão" href="pag1.html">Inicio</a>
+            <a class="botão" href="pag2-ficha.html">criação</a>
+        </ul>
+            <main>
+                <section>
+                  <h2>Personagens</h2>
+            
+                  <!-- Formulário de criação de personagem -->
+                  <div id="form-personagens">
+                    <form id="form-personagem">
+                      <label for="nome">Nome:</label>
+                      <input type="text" id="nome" name="nome"><br><br>
+                      <label for="forca">Força:</label>
+                      <input type="number" id="forca" name="forca"><br><br>
+                      <label for="intelecto">Intelecto:</label>
+                      <input type="number" id="intelecto" name="intelecto"><br><br>
+                      <label for="destreza">Destreza:</label>
+                      <input type="number" id="destreza" name="destreza"><br><br>
+                      <label for="vigor">Vigor:</label>
+                      <input type="number" id="vigor" name="vigor"><br><br>
+                      <label for="carisma">Carisma:</label>
+                      <input type="number" id="carisma" name="carisma"><br><br>
+                      <label for="arma">Arma:</label>
+                      <input type="text" id="arma" name="arma"><br><br>
+                      <button id="btn-adicionar-personagem">Adicionar Personagem</button>
+                    </form>
+                  </div>
+            
+                  <!-- Lista de personagens -->
+                  <ul id="lista-personagens"></ul>
+                </section>
+              </main>
+            
+              <script src="scripts_js/fichas.js"></script>
+              <script src="app.js"></script>
+              <script>
+                // Supondo que o usuário está logado no Firebase
+            const user = firebase.auth().currentUser;
+            if (user) {
+              // Obter email do usuário
+              const userEmail = user.email;
+            
+              // Verificar no banco de dados se ele está autorizado
+              fetch('https://permitidos/rest/authorized-users?q={"email":"' + userEmail + '"}', {
+                headers: {
+                  'x-apikey': 'd45e5b2c615d8874c7f11972261b122ef32c7',
+                  'Content-Type': 'application/json'
+                }
+              })
+              .then(response => response.json())
+              .then(data => {
+                if (data.length === 0) {
+                  // Se não autorizado, redireciona para a página de login
+                  alert('Você não tem permissão para acessar essa página.');
+                  window.location.href = '/login';
+                } else {
+                  // Se autorizado, continuar para o dashboard
+                  alert('Bem-vindo ao dashboard!');
+                }
+              });
+            }
+            
+              </script>
+        </main>
+    </header>
+</body>
+</html>

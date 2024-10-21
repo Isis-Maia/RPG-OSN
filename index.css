@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(Fundo.png);
+    background: url(imagens/floresfundo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@ body {
     background-color: #f5cfb48e;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    padding: 30px 40px;
+    padding: 30px 40px 180px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,7 +44,7 @@ body {
     border-radius: 35px;
     outline: none;
     font-size: 16px;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     margin-top: 10px;
 }
