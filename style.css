@@ -53,6 +53,13 @@ a.botão:hover {
     font-size: 150%;
 }
 
+.link{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
 /* textos */
 
 h1.titulo {
@@ -102,3 +109,8 @@ h3.is {
 strong {
     color: rgb(171, 4, 4)
 }
+
+/* Pagina dos deuses */
+
+/* começar pela ísis */
+
