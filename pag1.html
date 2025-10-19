@@ -3,41 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>O Segredo em Neupolina</title>
-    <link rel="shortcut icon" href="imagens/icons8-estrela-cute-color-favicons/web/star16x16.png" type="image/x-icon">
+
+    <title>O segredo em Neupolina</title>
 </head>
 <body>
     <header>
-        <h1 class="top">O Segredo em Neupolina</h1>
-        <ul class="link">
-            <a class="botão" href="index.html">index</a>
-            <a class="botão" href="pag2-ficha.html">criação</a>
-            <a class="botão" href="pag3-deuses.html">Deuses</a>
-            <a class="botão" href="pag4-lugares.html">Lugares</a>
-            <a class="botão" href="pag5-limites.html">Limites</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="pag1.html">Neupolina</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pagi1.html">Início</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pag2-mesas.html">Mesas</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ficha
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Especies</a></li>
+                <li><a class="dropdown-item" href="#">Classes</a></li>
+                <li><a class="dropdown-item" href="#">Itens</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Players</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mundo
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Reinos</a></li>
+                <li><a class="dropdown-item" href="#">Deuses</a></li>
+                <li><a class="dropdown-item" href="#">Eventos</a></li>
+                <li><a class="dropdown-item" href="#">Bestário</a></li>
+                <li><a class="dropdown-item" href="#">Famosos</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Desenhos</a>
+            </li>
         </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+        </form>
+        </div>
+    </div>
+    </nav>
     </header>
     <main>
-        <h1 class="titulo">O Segredo em Neupolina</h1>
-            <p>Olá aventureiro! Bem-vindo a sua criação. <a href="pag7-uni.html">Uni</a> permitiu que você escolhecesse sua nova vida, claro, com a supervisão dele.
-            Mas não fique nervoso, deixe sua criatividade expandir e crie formas que iram marcar esse mundo.</p>
-            <h2>Como eu posso saber meu limite?</h2>
-                <p>Simples, o senhor Uni deixou separado algumas informações que você possa precisar. Sobre as raças, seus limites, poderes, os elementos! Até mesmo sobre os PH's, a Aura e sua vida. Recomendo ler tudo, mesmo que seja chato. Você não quer que sua proxima vida seja impedida de prosseguir né? Caso passe batido, talvez não seja tão legal para seus companheiros...</p>
-            <h2>Desenvolvedores</h2>
-<!-- Desisti do css, bota as informações primeiro -->
-                <h3>Fundadora</h3>
-                    <p>Senhorita M <br>Fundadora do sistema, designer, front-end</p>
-                <h3>Desenvolvedor</h3>
-                    <p>Henri <br>Desenvolvedor, balanceamento, back-end.</p>
-                <h3>Brainstorming</h3>
-                    <p>Dante <br>Desenvolvedor, balanceamento, Brainstorming.</p>
-            <h2>Redes sociais</h2>
-                <P>Siga a gente no <a href="https://www.youtube.com/@Senhoriita.m"> youtube</a> e no <a href="https://www.instagram.com/senhoriita.m?igsh=cHd2dGM0b3pjNXp0">Instagram</a> para receber mais noticias e atualizações sobre o rpg!</P>
+        <h1 id="tit">Neupolina</h1>
     </main>
     <footer>
-        <p class="final">© & copyright 2024 by Senhorita M.</p>
+        
     </footer>
+
 </body>
 </html>
-

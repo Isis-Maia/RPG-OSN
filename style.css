@@ -1,135 +1,79 @@
-@font-face {
-    font-family: Londona;
-    src: url(fonte/londona/Londona-reguler.otf);
-}
-@font-face {
-    font-family: kena;
-    src: url(fonte/kenarose/Kenarose.otf);
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+
+header .navbar {
+  background-color: #8B0000 !important; 
+  border-bottom: 2px solid #D4AF37;
 }
 
-* {
-    margin: 0cm;
+.navbar-brand {
+  color: #FFD700 !important;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 35px;
+  text-shadow: 0 0 5px #FFD700;
 }
 
-body {
-    background-color: rgb(197, 209, 220);
+.nav-link {
+  color: #C5BBAE !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #FFD700 !important;
+  text-shadow: 0 0 5px #FFD700;
+}
+
+.btn-outline-success {
+  border-color: #D4AF37;
+  color: #D4AF37;
+}
+
+.btn-outline-success:hover {
+  background-color: #D4AF37;
+  color: #8B0000;
+  box-shadow: 0 0 10px #FFD700;
 }
 
 header {
-    background-color: rgb(240, 200, 127);
-    min-height: 70px;
-    padding-top: 40px;
-}
-
-main {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-family: cursive;
-}
-
-footer {
-    background-color: rgb(240, 200, 127);
-    min-height: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-/* Botão */
-
-/* nunca me senti tão organizada, socorro */
-
-a.botão {
-    color: red;
-    text-decoration: none;
-    font-family: Kena;
-}
-
-a.botão:hover {
-    color: red;
-    text-decoration: none;
-    font-size: 150%;
-}
-
-.link{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Links */
-
-a{
-    color: rgb(170, 79, 9);
-    text-decoration: none;
+  box-shadow: 0 0 20px #D4AF37;
 }
 
 a:hover {
-    color:rgb(170, 79, 9);
-    text-decoration: none;
-    font-size: 130%;
+  color: #FFD700;
+  text-shadow: 0 0 8px #FFD700;
+  transition: all 0.3s ease;
 }
 
-/* textos */
-
-h1.titulo {
-    color: rgb(200, 20, 20);
-    margin-top: 30px;
-    font-family: Londona;
-    text-align: center;
-    font-size: 50px;
+@keyframes brilho {
+  0% {opacity: 0.6;}
+  50% {opacity: 1;}
+  100% {opacity: 0.6;}
 }
 
-h1.top {
-    color: red;
-    font-family: Kena;
-    font-size: 1.3em;
-    padding-left: 20px;
-    padding-bottom: 15px;
+.logo {
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
-p {
-    color: rgb(14, 2, 47);
-    padding-top: 15px;
-    font-size: 1.1em;
-}
-
-p.final {
-    color: rgb(14, 2, 47);
-    padding-bottom: 15px;
-}
-
-p.aviso {
-    color: rgba(59, 59, 59, 0.555)
+body {
+  background-image: url("https://images.pexels.com/photos/7599717/pexels-photo-7599717.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(100, 0, 0, 0.5);
+  background-blend-mode: multiply;
     
 }
 
-h2 {
-    color: rgb(199, 56, 4);
-    padding-top: 15px;
-    font-size: 1.5em;
-}
-
-h3 {
-    color:  rgb(170, 79, 9);
-    padding-top: 15px;
-    
-}
-
-h4 {
-    color:  rgb(170, 79, 9);
-    padding-top: 15px;
-    
-}
-
-h3.de {
-    color:  rgb(170, 79, 9);
-    padding-top: 15px;
-}
-
-strong {
-    color: rgb(171, 4, 4)
+#tit {
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+  color: #FFD700 !important;
+  text-shadow: 0 0 5px #FFD700;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
