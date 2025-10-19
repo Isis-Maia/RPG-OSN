@@ -8,6 +8,7 @@
 <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="container.css">
 
     <title>O segredo em Neupolina</title>
 </head>
@@ -62,44 +63,93 @@
         </div>
     </div>
     </nav>
+    <!-- fim do bootstrap -->
     </header>
     <main>
         <h1 id="tit">Mesas</h1>
         <div id="engrenagem">
             <img src="imagens/detalhes/engrenagem.webp" alt="">
         </div>
-        <h2>Um universo de segredos e misterios que vão além do mundo físico.</h2>
+        <h2 class="frase">Um universo de segredos e misterios que vão além do mundo físico.</h2>
         
-        <!-- Inicio do container -->
-        <div class="container-mesas">
-            <div class="mesas">
-                <details>
-                    <summary>Herança maldita</summary>
-                    <h2>
-                        <a href="pag2-1-herança.html">Herança maldita</a>
-                    </h2>
-                    <p>Suspense, misterio, drama</p>
-                    <p>Status: Em andamento</p>
-                    <p>Um grupo de seis aventureiros apenas querendo trabalhar em paz arranjam uma divida que dificulta suas vidas. Em uma de suas expedições acabam encontrando uma mansão com um trabalho que paga muito bem. Agora eles terão que trabalhar em dobro e quem sabe desvendar os misterios em volta de seu lar.
-                    </p>
-                    <h2>Personagens:</h2>
-                    <p>
-                    Duke um tenebris guerreiro.<br><br>
-                    Kenai um Gratiluz beserker. <br><br>
-                    Atlas um vital arcanatus.
-                    <br><br>
-                    Rajina um vital trouxa.
-                    <br><br>
-                    Zarina uma grinvolk patrulheira.
-                    <br><br>
-                    Junin um tubrão (anão) devoto.
-                    </p>
-                </details>
+         <!-- 🔸 Índice -->
+        <nav class="indice">
+            <h2 id="indice">Índice de Mesas</h2>
+            <ul>
+                <li><a href="#andamento">📖 Em andamento</a></li>
+                <li><a href="#nao-iniciado">⏳ A iniciar</a></li>
+                <li><a href="#finalizadas">🏁 Finalizadas</a></li>
+                <li><a href="#outros">🌀 Outros sistemas</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mesas em andamento -->
+         <section id="andamento">
+            <h2>Em andamento</h2>
+            <!-- herança maldita -->
+            <div class="card-container">
+                <div class="card">
+                    <img src="imagens/img-temporaria/mansão.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <details>
+                            <summary>Herança maldita</summary>
+                            <h2>
+                            <a href="pag2-1-herança.html">Herança maldita</a>
+                            </h2>
+                            <p>Suspense, misterio, drama</p>
+                            <p>Status: Em andamento</p>
+                            <p>Um grupo de seis aventureiros apenas querendo trabalhar em paz arranjam uma divida que dificulta suas vidas. Em uma de suas expedições acabam encontrando uma mansão com um trabalho que paga muito bem. Agora eles terão que trabalhar em dobro e quem sabe desvendar os misterios em volta de seu lar.
+                            </p>
+                            <h2>Personagens:</h2>
+                            <p>
+                            Duke um tenebris guerreiro.
+                            <br>Kenai um Gratiluz beserker. 
+                            <br>Atlas um vital arcanatus.
+                            <br>Rajina um vital trouxa.
+                            <br>Zarina uma grinvolk patrulheira.
+                            <br> Junin um tubrão (anão) devoto.
+                            </p>
+                    </details>
+                </div>
             </div>
+         </section>
 
-        </div>
+         <!-- Mesas não iniciadas -->
+          <section id="nao-iniciadas">
+            <h2>A iniciar</h2>
+            <div class="card-container">
+            <!-- Kanji -->
+                <div class="card">
+                    <img src="imagens/img-temporaria/kanjis.jpeg" alt="...">
+                    <div class="card-body">
+                        <details>
+                            <summary>Almas kanjis</summary>
+                            <h2>Almas kanjis</h2>
+                            <p>Suspense, misterio, drama</p>
+                            <p>Status: Não iniciado</p>
+                            <p>Um grupo de pessoas acabam se reunindo no país gelido. Enquando exploram o lugar acham Kanjis, almas presas a terra por problemas mal resolvidos.
+                            </p>
+                            <h2>Personagens:</h2>
+                            <p>
+                            fichas incompletas
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+          </section>
+         
+          <!-- Mesas finaliadas -->
+           <section id="finalizadas">
+                <h2>Finalizadas</h2>
+                <p>Ainda não há mesas finalizadas</p>
+           </section>
 
-
+           <!-- Outros sistemas -->
+            <section id="outros">
+                <h2>Outros sistemas</h2>
+                <p>Mesas de outros sistemas serão adicionadas futuramente.</p>
+            </section>
     </main>
     <footer>
         
