@@ -100,7 +100,7 @@ body {
   margin-bottom: 30px;
 }
 
-#engrenagem {
+#engrenagem1 {
   position: fixed; 
   bottom: 580px;
   left: 93%;
@@ -110,13 +110,12 @@ body {
   
 }
 
-#engrenagem img {
+#engrenagem1 img {
   transform-origin: center center;
   width: 100%;
   transition: transform 0.1s linear;
   height: auto;
 }
-
 
 @keyframes girar {
   from { transform: rotate(0deg); }
@@ -157,3 +156,15 @@ h2 {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
+h3 {
+  font-family: "Eagle Lake", serif;
+  color: #fe0000;
+  margin: 0 auto;
+  width: 80%;
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+

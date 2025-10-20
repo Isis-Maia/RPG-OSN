@@ -1,0 +1,82 @@
+.bestiario {
+    display: flex;
+    background: #3e2723;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.lista-especies {
+    display: flex;
+    flex-direction: column;
+    background: #2c1a10;
+    padding: 20px;
+}
+
+.info-especies {
+    display: none;
+    padding: 30px;
+    flex: 1;
+    color: blancheadalmond;
+    position: relative;
+    bottom: -10px;
+    opacity: 0;
+    filter: blur(4px);
+    transition: all 0.8s ease;
+}
+
+.info-especies::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to top, #2c1a10, transparent);
+  pointer-events: none;
+}
+
+
+.info-especies.ativo {
+    display: block;
+    bottom: 0;
+    opacity: 1;
+    filter: blur(0);
+    box-shadow: 0 0 20px #ffd70044;
+}
+
+button {
+    background: #3e2723;
+    color: #1f130c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: "Eagle Lake", serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2)
+
+}
+
+button:hover {
+    background: linear-gradient(145deg, #ffea70,#e4be01);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 217, 0, 0.545);
+}
+
+button:active {
+    transform: scale(0.97);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    
+}
+
+.especies {
+    color: #980000;
+}
+
+ol {
+    color: #ff4b4b;
+    font-size: 19px;
+}

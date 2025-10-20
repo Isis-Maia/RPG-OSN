@@ -1,23 +1,18 @@
 
 // engrenagem
-const engrenagem = document.querySelector('#engrenagem img');
+const engrenagem = document.querySelector('#engrenagem1 img');
 let ultimaPosicao = window.scrollY;
 let rotacao = 0;
 
 window.addEventListener('scroll', () => {
   const posicaoAtual = window.scrollY;
-
-  // diferença da rolagem
   let diferenca = posicaoAtual - ultimaPosicao;
-
-  // multiplica por um fator pra deixar a rotação mais lenta
-  rotacao += diferenca * 0.5; // 0.5 é a “sensibilidade”, ajuste se quiser mais lento
-
-  // aplica a rotação
+  rotacao += diferenca * 0.5;
   engrenagem.style.transform = `rotate(${rotacao}deg)`;
 
   ultimaPosicao = posicaoAtual;
 });
+
 
 // container
 
@@ -59,4 +54,11 @@ document.querySelectorAll(".card").forEach(card => {
 //   });
 // });
 
+
+// Bestiario
+
+function showEspecies(id) {
+  document.querySelectorAll('.info-especies').forEach(s => s.classList.remove('ativo'));
+  document.getElementById(id).classList.add('ativo');
+}
 
