@@ -66,21 +66,6 @@ details[open] summary {
 }
 
 
-p {
-    font-size: 20px;
-    color: blanchedalmond;
-}
-
-a {
-    color: #DADADA;
-    text-decoration: none;
-    margin-left: 15px;
-}
-
-h2 {
-    padding: 20px;
-}
-
 /* indice */
 .indice {
     background-color: #3e1f0e;
@@ -114,7 +99,7 @@ h2 {
     color: #ffd700;
 }
 
-section {
+.cd {
     margin-top: 60px;
 }
 

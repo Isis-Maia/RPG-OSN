@@ -8,6 +8,8 @@
 <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bestiario.css">
+    <link rel="stylesheet" href="cards.css">
 
     <title>O segredo em Neupolina</title>
 </head>
@@ -22,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="pagi1.html">Início</a>
+            <a class="nav-link active" aria-current="page" href="pag1.html">Início</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="pag2-mesas.html">Mesas</a>
@@ -32,11 +34,11 @@
                 Ficha
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Especies</a></li>
-                <li><a class="dropdown-item" href="#">Classes</a></li>
-                <li><a class="dropdown-item" href="#">Itens</a></li>
+                <li><a class="dropdown-item" href="pag3-especies.html">Especies</a></li>
+                <li><a class="dropdown-item" href="pag4-classes.html">Classes</a></li>
+                <li><a class="dropdown-item" href="pag5-itens.html">Itens</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Players</a></li>
+                <li><a class="dropdown-item" href="pag6-players.html">Players</a></li>
             </ul>
             </li>
             <li class="nav-item dropdown">
@@ -44,11 +46,11 @@
                 Mundo
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Reinos</a></li>
-                <li><a class="dropdown-item" href="#">Deuses</a></li>
-                <li><a class="dropdown-item" href="#">Eventos</a></li>
-                <li><a class="dropdown-item" href="#">Bestário</a></li>
-                <li><a class="dropdown-item" href="#">Famosos</a></li>
+                <li><a class="dropdown-item" href="pag7-reinos.html">Reinos</a></li>
+                <li><a class="dropdown-item" href="pag8-deuses.html">Deuses</a></li>
+                <li><a class="dropdown-item" href="pag9-eventos.html">Eventos</a></li>
+                <li><a class="dropdown-item" href="pag10-bestiario.html">Bestário</a></li>
+                <li><a class="dropdown-item" href="pag11-famosos.html">Famosos</a></li>
             </ul>
             </li>
             <li class="nav-item">
@@ -65,12 +67,447 @@
     </header>
     <main>
         <h1 id="tit">Classes</h1>
-        <div id="engrenagem">
+        <div id="engrenagem1">
             <img src="imagens/detalhes/engrenagem.webp" alt="">
         </div>
-        <h2>Um universo de segredos e misterios que vão além do mundo físico.</h2>
+        <h2 class="frase">Um universo de segredos e misterios que vão além do mundo físico.</h2>
         
-        
+        <div class="bestiario">
+            <aside class="lista-especies">
+                <button class="besti" onclick="showEspecies('beserke')">Beserkes</button>
+                <button class="besti" onclick="showEspecies('cavaleiro')">Cavaleiros</button>
+                <button class="besti" onclick="showEspecies('patrulheiros')">Patrulheiro</button>
+                <button class="besti" onclick="showEspecies('arcanatus')">Arcanatus</button>
+                <button class="besti" onclick="showEspecies('trouxa')">Trouxas</button>
+                <button class="besti" onclick="showEspecies('afotico')">Afoticos</button>
+                <button class="besti" onclick="showEspecies('glista')">Glista</button>
+                <button class="besti" onclick="showEspecies('devoto')">Devoto</button>
+                <button class="besti" onclick="showEspecies('mc')">MC</button>
+
+            </aside>
+
+            <!-- Beserkes -->
+            <section id="beserke" class="info-especies ativo">
+                <h2 class="especies">Beserkes</h2>
+                <p>São conhecidos por sua força e habilidades corpo a corpo na maioria das vezes. São os que mais têm energia para atacar e às vezes fazem coisas inesperadas.</p>
+                <p><strong>Habilidade <u>"Ri agora e chora depois":</u></strong> Com essa habilidade você pode atacar mais uma vez na sua rodada gastando 4 de energia. Caso use você recebe -3 para tentar acertar o alvo.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Força ou Agilidade. </p>
+                <dl>
+                    <dt>Vida base: 20</dt>
+                    <dd>+3 a cada ponto de vigor.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Energia base: 25</dt>
+                    <dd>+5 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 20</dt>
+                    <dd>+3 a cada ponto de intelecto.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Mana base: 15</dt>
+                    <dd>+2 a cada ponto de arcano.</dd>
+                    <dd>+2 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Kenai</summary>
+                                <h2>Kenai</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Blood moon</summary>
+                                <h2>Blood Moon</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cavaleiros -->
+            <section id="cavaleiro" class="info-especies ativo">
+                <h2 class="especies">Cavaleiros</h2>
+                <p>São conhecidos por sua alta resistência e por terem habilidades com várias armas. Os mais resistentes para proteger o grupo.</p>
+                <p><strong>Habilidade <u>"Alvo inevitável":</u></strong> Com essa habilidade você chama a atenção do inimigo obrigando ele a te atacar. Você gasta 4 de energia e ganha +3 para desviar, contra atacar golpes corpo a corpo ou defender.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Força ou Vigor.</p>
+                <dl>
+                    <dt>Vida base: 25</dt>
+                    <dd>+5 a cada ponto de vigor.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Energia base: 20</dt>
+                    <dd>+3 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 20</dt>
+                    <dd>+3 a cada ponto de intelecto.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Mana base: 15</dt>
+                    <dd>+2 a cada ponto de arcano.</dd>
+                    <dd>+2 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Duke</summary>
+                                <h2>Duke</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Lucien</summary>
+                                <h2>Lucien</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Patrulheiros -->
+            <section id="patrulheiros" class="info-especies">
+                <h2 class="especies">Patrulheiros</h2>
+                <p> São conhecidos por serem ótimos atiradores, causando dano a distância. Não são bons em corpo a corpo, mas sabem como reagir em situações de crise.</p>
+                <p><strong>Habilidade <u>"Olho de falcão":</u></strong> Com essa habilidade você pode analisar o inimigo e descobrir seu ponto fraco ( caso seja uma espécie desconhecida ou um ser de armadura você descobre possíveis pontos fracos) e preparar um tiro, perdendo um turno e gastando 3 de energia. Caso acerte, o valor do dano aumenta a metade dele.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Agilidade ou Intelecto.</p>
+                <dl>
+                    <dt>Vida base: 20</dt>
+                    <dd>+3 a cada ponto de vigor.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Energia base: 20</dt>
+                    <dd>+3 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 25</dt>
+                    <dd>+5 a cada ponto de intelecto.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Mana base: 15</dt>
+                    <dd>+2 a cada ponto de arcano.</dd>
+                    <dd>+2 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Zarina</summary>
+                                <h2>Duke</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Falcão</summary>
+                                <h2>Falcão</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Arcanatus -->
+            <section id="arcanatus" class="info-especies">
+                <h2 class="especies">Arcanatus</h2>
+                <p>São conhecidos por terem nascido com habilidades magicas. Seres que não precisaram aprender ou treinar para conseguir ter. Por conta disso eles possuem muita mana. Não precisam de nada para lançar feitiços.</p>
+                <p><strong>Habilidade <u>"Barreira elemental":</u></strong> Você cria uma barreira com base no seu elemento. O efeito e função muda dependendo de qual elemento for, mas sempre custa 3 de mana e a barreira é de 3 metros.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Agilidade ou Arcano.</p>
+                <dl>
+                    <dt>Vida base: 15</dt>
+                    <dd>+2 a cada ponto de vigor.</dd>
+                    <dd>+2 a cada level.</dd>
+                    <dt>Energia base: 20</dt>
+                    <dd>+3 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 20</dt>
+                    <dd>+3 a cada ponto de intelecto.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Mana base: 25</dt>
+                    <dd>+5 a cada ponto de arcano.</dd>
+                    <dd>+3 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Atlas</summary>
+                                <h2>Atlas</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Magnus Higashikata</summary>
+                                <h2>Haamiah</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trouxas -->
+            <section id="trouxa" class="info-especies">
+                <h2 class="especies">Trouxas</h2>
+                <p>São conhecidos por terem estudado e treinado a própria mana ao ponto de conseguir fazer magia. Por terem que praticar e estudar muito para obter o arcano, acabam tendo bastante energia. Precisam de varinha ou cajado para lançar feitiços.</p>
+                <p><strong>Habilidade <u>"Canalização":</u></strong> Você pode carregar sua varinha/cajado, perdendo um turno e gastando 3 de energia para isso. Você ganha +5 em poder.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Intelecto ou Arcano.</p>
+                <dl>
+                    <dt>Vida base: 15</dt>
+                    <dd>+2 a cada ponto de vigor.</dd>
+                    <dd>+2 a cada level.</dd>
+                    <dt>Energia base: 25</dt>
+                    <dd>+5 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 20</dt>
+                    <dd>+3 a cada ponto de intelecto.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Mana base: 20</dt>
+                    <dd>+3 a cada ponto de arcano.</dd>
+                    <dd>+3 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Kalleb Rajina</summary>
+                                <h2>Kalleb Rajina</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Cronos Vincent</summary>
+                                <h2>Cronos Vincent</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Afoticos -->
+            <section id="afotico" class="info-especies">
+                <h2 class="especies">Afóticos</h2>
+                <p>São conhecidos por terem feito pacto com seres místicos para obter magia. Eles gastam de sua sanidade para usar seu poder. Usam de tarot, símbolos, desenhos etc para lançar feitiços.</p>
+                <p><strong>Habilidade <u>"Troca injusta":</u></strong> Você pode fazer uma troca com seu patrono, oferecendo 5 de energia em troca de 5 de sanidade.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Intelecto ou Presença.</p>
+                <dl>
+                    <dt>Vida base: 20</dt>
+                    <dd>+3 a cada ponto de vigor.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Energia base: 20</dt>
+                    <dd>+3 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 25</dt>
+                    <dd>+5 a cada ponto de intelecto.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Mana base: 15</dt>
+                    <dd>+2 a cada ponto de arcano.</dd>
+                    <dd>+2 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Henari</summary>
+                                <h2>Henari</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Henri</summary>
+                                <h2>Henri</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="glista" class="info-especies">
+                <h2 class="especies">Glista</h2>
+                <p>São conhecidos por serem mestres em poções, tanto de buffs como debuffs. Eles são bem habilidosos.</p>
+                <p><strong>Habilidade <u>"Poção intuitiva":</u></strong> Você pode fazer uma poção de nível simples com ingrediente que você possui no momento. O mestre irá jogar um dado ou decidir a poção com base no que tem no ambiente ou em sua mochila. Você gasta 4 de energia e passa a sua ação.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Intelecto ou Agilidade.</p>
+                <dl>
+                    <dt>Vida base: 20</dt>
+                    <dd>+3 a cada ponto de vigor.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Energia base: 25</dt>
+                    <dd>+5 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 20</dt>
+                    <dd>+3 a cada ponto de intelecto.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Mana base: 15</dt>
+                    <dd>+2 a cada ponto de arcano.</dd>
+                    <dd>+2 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Magnus</summary>
+                                <h2>Magnus</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Milark</summary>
+                                <h2>Milark</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="devoto" class="info-especies">
+                <h2 class="especies">Devoto</h2>
+                <p>São conhecidos por terem um elemento raro, elemento de cura. São abençoados com esse elemento para curar e proteger.(Obrigatório o elemento de althara)</p>
+                <p><strong>Habilidade <u>"Coincidência? eu acho que não":</u></strong> Uma vez por cena você pode rezar para seu deus para que alguma coincidência aconteça. O mestre irá girar um dado para decidir o que vai acontecer. Você precisa gastar 4 de energia e precisa gastar uma ação para isso, caso tenha algum item religioso, pode gastar como uma ação bônus.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Presença ou Arcano.</p>
+                <dl>
+                    <dt>Vida base: 20</dt>
+                    <dd>+3 a cada ponto de vigor.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Energia base: 20</dt>
+                    <dd>+3 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 15</dt>
+                    <dd>+2 a cada ponto de intelecto.</dd>
+                    <dd>+2 a cada level.</dd>
+                    <dt>Mana base: 25</dt>
+                    <dd>+5 a cada ponto de arcano.</dd>
+                    <dd>+2 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Junin</summary>
+                                <h2>Junin</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Valeria</summary>
+                                <h2>Valeria</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mc" class="info-especies">
+                <h2 class="especies">MC</h2>
+                <p>São conhecidos por terem um elemento raro, elemento do som, klang. São abençoados com esse elemento para curar e proteger. (Obrigatório o elemento klang)</p>
+                <p><strong>Habilidade <u>"Fresstyle":</u></strong> Você pode tocar uma música ambiente de acordo com a situação, o mestre irá escolher bônus temporários para todos que estão naquele ambiente ganharem. Você gasta 4 de energia para isso.</p>
+                <h3>Pontos</h3>
+                <p>Você recebe um bônus de +3 e +5 que você pode colocar em alguma perícia de Presença ou Arcano.</p>
+                <dl>
+                    <dt>Vida base: 20</dt>
+                    <dd>+3 a cada ponto de vigor.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Energia base: 25</dt>
+                    <dd>+5 a cada ponto de força.</dd>
+                    <dd>+3 a cada level.</dd>
+                    <dt>Sanidade base: 15</dt>
+                    <dd>+2 a cada ponto de intelecto.</dd>
+                    <dd>+2 a cada level.</dd>
+                    <dt>Mana base: 20</dt>
+                    <dd>+3 a cada ponto de arcano.</dd>
+                    <dd>+2 a cada level.</dd>
+                </dl>
+                <h3>Pessoas relevantes:</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Yend</summary>
+                                <h2>Yend</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="//" alt="">
+                        <div class="card-body">
+                            <details>
+                                <summary>Gamora</summary>
+                                <h2>Gamora</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus temporibus, officia fuga rem quos hic mollitia at esse quisquam iusto culpa suscipit a. Animi, atque quas! Et, pariatur odit?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
 
     </main>
     <footer>

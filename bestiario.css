@@ -45,7 +45,7 @@
     box-shadow: 0 0 20px #ffd70044;
 }
 
-button {
+.besti {
     background: #3e2723;
     color: #1f130c;
     border: none;
@@ -60,13 +60,13 @@ button {
 
 }
 
-button:hover {
+.besti:hover {
     background: linear-gradient(145deg, #ffea70,#e4be01);
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(255, 217, 0, 0.545);
 }
 
-button:active {
+.besti:active {
     transform: scale(0.97);
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     
@@ -79,4 +79,10 @@ button:active {
 ol {
     color: #ff4b4b;
     font-size: 19px;
+}
+
+dl {
+    color: #ff4b4b;
+    font-size: 19px;
+    padding-left: 15%;
 }

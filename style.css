@@ -145,6 +145,8 @@ p {
   line-height: 1.6;
   font-size: 18px;
   margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h2 {
