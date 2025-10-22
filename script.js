@@ -62,3 +62,13 @@ function showEspecies(id) {
   document.getElementById(id).classList.add('ativo');
 }
 
+// reforma
+
+document.addEventListener("DOMContentLoaded", () => {
+  const aviso = document.getElementById("emConstrucao");
+  const fechar = document.getElementById("fecharAviso");
+
+  fechar.addEventListener("click", () => {
+    aviso.style.display = "none";
+  });
+});
