@@ -3,8 +3,12 @@
 
 header .navbar {
   background-color: #704214 !important; 
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1030;
 }
 
 header .navbar::after {
@@ -12,7 +16,7 @@ header .navbar::after {
   position: absolute;
   top: -1px;
   left: 150px;
-  width: 100%;
+  right: 0;
   height: 100%;
   pointer-events: none;
   border-radius: 5px;
@@ -78,13 +82,16 @@ a:hover {
   font-style: normal;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
-  background-image: url("https://images.pexels.com/photos/7599717/pexels-photo-7599717.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: rgba(100, 0, 0, 0.5);
-  background-blend-mode: multiply;
+  padding-top: 70px;
+  margin: 0;
+  background: linear-gradient(to bottom, #130101 0%, #8B0000 200%);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
     
 }
 
@@ -102,10 +109,12 @@ body {
 
 #engrenagem1 {
   position: fixed; 
-  bottom: 580px;
-  left: 93%;
+  bottom: 80%;
+  left: auto;
+  right: -2%;
   width: 100px;
   opacity: 0.8;
+  max-width: 15vw;
   pointer-events: none;
   
 }
@@ -120,6 +129,19 @@ body {
 @keyframes girar {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/* esconder a engrenagem em tablets e celulares */
+@media (max-width: 991.98px) { /* md e menores (tablet) */
+  #engrenagem1 {
+    display: none;
+  }
+}
+/* garantir em celulares menores */
+@media (max-width: 575.98px) {
+  #engrenagem1 {
+    display: none;
+  }
 }
 
 .frase {
@@ -191,31 +213,6 @@ footer {
   gap: 5px;
 }
 
-.footer-title {
-  color: #ff4c4c;
-  font-weight: bold;
-  margin: 0;
-  font-size: 0.95rem;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px;
-}
-
-.footer-links a {
-  color: #d4af37;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-links a:hover {
-  color: #ff4c4c;
-  text-decoration: underline;
-}
-
 .footer-creditos {
   margin: 0;
   font-size: 0.75rem;
@@ -227,3 +224,6 @@ footer {
   font-weight: bold;
 }
 
+.foop {
+  text-align: center;
+}
